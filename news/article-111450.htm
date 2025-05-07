@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <link rel="canonical" href="https://vpnworld.github.io/news/article-111450.htm" />
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Document Title, Description, and Author -->
+    <title>使用Kubernetes实现科学上网的全面指南：高效、安全、灵活的解决方案</title>
+        <meta name="description" content="随着互联网的普及和网络审查的加强，越来越多的用户开始寻求一种既高效又安全的方式来突破网络限制，享受更自由的互联网体验。科学上网（或称翻墙）需求不断增长，而容器化技术的兴起，为这一需求提供了新的解决方案" />
+        <link rel="icon" href="/assets/website/img/windowsclashnode/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN世界 订阅订阅官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnworld.github.io/news/article-111450.htm" />
+    <meta property="og:site_name" content="VPN世界 订阅订阅官网" />
+    <meta property="og:title" content="使用Kubernetes实现科学上网的全面指南：高效、安全、灵活的解决方案" />
+    <meta property="og:image" content="https://vpnworld.github.io/uploads/20240618/174f65e7a46144db9930fea0079b3df6.webp" />
+        <meta property="og:release_date" content="2025-05-04T09:28:25" />
+    <meta property="og:updated_time" content="2025-05-04T09:28:25" />
+        <meta property="og:description" content="随着互联网的普及和网络审查的加强，越来越多的用户开始寻求一种既高效又安全的方式来突破网络限制，享受更自由的互联网体验。科学上网（或称翻墙）需求不断增长，而容器化技术的兴起，为这一需求提供了新的解决方案" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="使用Kubernetes实现科学上网的全面指南：高效、安全、灵活的解决方案">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- Google Fonts Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/assets/website/css/windowsclashnode/hello-bsb.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE2647JS1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BE2647JS1V');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#bsb-tpl-navbar" data-bs-smooth-scroll="true" tabindex="0" data-page="detail">
+        <!-- Header -->
+    <header id="header" class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX">
+        <!-- Navbar 1 - Bootstrap Brain Component -->
+        <nav id="scrollspyNav" class="navbar navbar-expand-lg bsb-tpl-bg-alabaster bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky" data-bsb-sticky-target="#header">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                                <span>VPN世界</span>
+                                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul id="bsb-tpl-navbar" class="navbar-nav justify-content-end flex-grow-1">
+                                                        <li class="nav-item">
+                                <a class="nav-link" href="/">首页</a>
+                            </li>
+                                                        <li class="nav-item">
+                                <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                            </li>
+                                                        <li class="nav-item">
+                                <a class="nav-link" href="/news/">新闻资讯</a>
+                            </li>
+                                                        <li class="nav-item">
+                                <a class="nav-link" href="/client.htm">客户端</a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero 3 - Bootstrap Brain Component -->
+    <section id="scrollspyHero" class="bsb-tpl-bg-alabaster pt-3 pt-xl-2 list">
+        <div class="container overflow-hidden">
+            <div class="row gy-5 gy-lg-0">
+                <div class="col-12 col-lg-6 slogan">
+                    <h1 class="display-3 fw-bold mb-3">使用Kubernetes实现科学上网的全面指南：高效、安全、灵活的解决方案 </h1>
+                    <p class="fs-4 mb-5">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / <span>正文</span>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 text-center">
+                    <div class="position-relative">
+                        <div class="bsb-circle border border-4 border-accent position-absolute top-50 start-10 translate-middle z-1"></div>
+                        <div class="bsb-circle bg-primary position-absolute top-50 start-50 translate-middle" style="--bsb-cs: 460px;"></div>
+                        <div class="bsb-circle border border-4 border-accent position-absolute top-10 end-0 z-1" style="--bsb-cs: 100px;"></div>
+                        <img class="img-fluid position-relative z-2" loading="lazy" href="/assets/website/img/windowsclashnode/hero/hero-img-1.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main -->
+    <main id="main">
+        <!-- Process 1 - Bootstrap Brain Component -->
+        <section id="scrollspyAbout" class="py-5 py-xl-8 py-xxl-16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="41" data-end="212" class="">随着互联网的普及和网络审查的加强，越来越多的用户开始寻求一种既高效又安全的方式来突破网络限制，享受更自由的互联网体验。科学上网（或称翻墙）需求不断增长，而容器化技术的兴起，为这一需求提供了新的解决方案。**Kubernetes（简称k8s）**作为一个强大的开源容器编排平台，不仅在企业级应用中大放异彩，也逐渐成为实现科学上网的一种高效工具。</p>
+<p data-start="214" data-end="329" class="">Kubernetes的容器调度、自动化管理和高可用性等特性使其成为管理科学上网服务的理想平台。本文将全面解析如何在Kubernetes环境中实现科学上网，包括Kubernetes的基础知识、部署流程、安全注意事项以及常见问题解答。</p>
+<h2 data-start="331" data-end="348" class="">什么是Kubernetes？</h2>
+<p data-start="350" data-end="409" class="">Kubernetes（简称k8s）是一个开源的容器编排工具，帮助开发者以自动化方式管理容器化的应用。它的核心功能包括：</p>
+<ol data-start="411" data-end="645">
+<li data-start="411" data-end="461" class="">
+<p data-start="414" data-end="461" class=""><strong data-start="414" data-end="425">容器调度和管理</strong>：Kubernetes可以自动调度容器的部署，确保容器在集群中高效运行。</p>
+</li>
+<li data-start="462" data-end="521" class="">
+<p data-start="465" data-end="521" class=""><strong data-start="465" data-end="473">负载均衡</strong>：通过自动化的负载均衡机制，Kubernetes可以均衡地分配流量至多个实例，提高系统的可靠性。</p>
+</li>
+<li data-start="522" data-end="582" class="">
+<p data-start="525" data-end="582" class=""><strong data-start="525" data-end="536">滚动升级与回滚</strong>：Kubernetes允许用户平滑地进行应用升级，确保系统稳定，并能够在出现问题时迅速回滚。</p>
+</li>
+<li data-start="583" data-end="645" class="">
+<p data-start="586" data-end="645" class=""><strong data-start="586" data-end="599">服务发现与负载均衡</strong>：Kubernetes支持自动发现服务并进行流量调度，使得科学上网服务的访问更加灵活和稳定。</p>
+</li>
+</ol>
+<p data-start="647" data-end="690" class="">这些特性使得Kubernetes成为构建高可用、易于扩展的科学上网服务平台的理想选择。</p>
+<h2 data-start="692" data-end="718" class="">为什么选择Kubernetes来实现科学上网？</h2>
+<p data-start="720" data-end="822" class="">在传统的科学上网方式中，用户通常需要手动配置VPN服务或代理工具，而这种方式存在着诸多管理上的困难和维护成本。Kubernetes的使用可以有效解决这些问题，以下是选择Kubernetes的几个重要原因：</p>
+<h3 data-start="824" data-end="835" class="">1. 高可用性</h3>
+<p data-start="837" data-end="929" class="">Kubernetes可以通过服务发现和负载均衡，确保科学上网服务的高可用性。即使某个服务实例发生故障，Kubernetes会自动将流量切换到其他可用实例，确保用户的科学上网体验不中断。</p>
+<h3 data-start="931" data-end="943" class="">2. 自动化管理</h3>
+<p data-start="945" data-end="1043" class="">Kubernetes为用户提供了强大的自动化管理功能，包括自动化部署、健康检查和故障恢复。通过Kubernetes的API和命令行工具，用户可以轻松地管理和监控科学上网服务，减少了人工干预的需求。</p>
+<h3 data-start="1045" data-end="1056" class="">3. 弹性扩展</h3>
+<p data-start="1058" data-end="1134" class="">随着用户数量的增加，科学上网服务需要具备良好的扩展性。Kubernetes可以自动扩展服务实例，以应对流量的增加，确保服务始终保持良好的性能和响应速度。</p>
+<h3 data-start="1136" data-end="1149" class="">4. 集成多种工具</h3>
+<p data-start="1151" data-end="1232" class="">Kubernetes不仅支持多种服务和协议的集成，还可以与流行的VPN解决方案（如OpenVPN和WireGuard）结合使用，构建一个高效、安全的科学上网平台。</p>
+<h2 data-start="1234" data-end="1258" class="">Kubernetes实现科学上网的基本步骤</h2>
+<p data-start="1260" data-end="1315" class="">下面将详细介绍在Kubernetes上实现科学上网的步骤，包括环境准备、VPN部署、Ingress配置等内容。</p>
+<h3 data-start="1317" data-end="1328" class="">1. 环境准备</h3>
+<p data-start="1330" data-end="1397" class="">在开始之前，首先确保你的Kubernetes集群已经搭建完成，并且能够正常运行。你可以选择以下几种方式来搭建Kubernetes环境：</p>
+<ul data-start="1399" data-end="1539">
+<li data-start="1399" data-end="1469" class="">
+<p data-start="1401" data-end="1469" class=""><strong data-start="1401" data-end="1424">云服务商提供的Kubernetes服务</strong>：如AWS、GCP、阿里云等提供的Kubernetes托管服务，能够快速搭建高可用的集群。</p>
+</li>
+<li data-start="1470" data-end="1539" class="">
+<p data-start="1472" data-end="1539" class=""><strong data-start="1472" data-end="1492">自行搭建Kubernetes集群</strong>：如果你有足够的硬件资源，可以通过工具（如kubeadm）在本地搭建Kubernetes集群。</p>
+</li>
+</ul>
+<p data-start="1541" data-end="1592" class="">此外，还需要安装和配置<strong data-start="1552" data-end="1563">kubectl</strong>工具，它是与Kubernetes集群进行交互的命令行工具。</p>
+<h3 data-start="1594" data-end="1608" class="">2. 部署VPN服务</h3>
+<p data-start="1610" data-end="1711" class="">在Kubernetes集群上部署VPN服务是实现科学上网的核心步骤。我们可以选择常见的VPN解决方案，如<strong data-start="1662" data-end="1673">OpenVPN</strong>或<strong data-start="1674" data-end="1687">WireGuard</strong>，并通过Kubernetes来自动化部署和管理。</p>
+<h4 data-start="1713" data-end="1723" class="">部署步骤：</h4>
+<ul data-start="1725" data-end="1934">
+<li data-start="1725" data-end="1804" class="">
+<p data-start="1727" data-end="1804" class=""><strong data-start="1727" data-end="1738">选择VPN服务</strong>：OpenVPN和WireGuard是最常用的两种VPN协议，它们都有强大的加密和安全性。根据自己的需求，选择一个合适的VPN服务。</p>
+</li>
+<li data-start="1805" data-end="1871" class="">
+<p data-start="1807" data-end="1871" class=""><strong data-start="1807" data-end="1817">编写配置文件</strong>：为所选择的VPN服务编写Kubernetes配置文件，确保VPN服务能够在集群中顺利启动并提供稳定的服务。</p>
+</li>
+<li data-start="1872" data-end="1934" class="">
+<p data-start="1874" data-end="1934" class=""><strong data-start="1874" data-end="1884">应用配置文件</strong>：使用<code data-start="1887" data-end="1902">kubectl apply</code>命令将配置文件应用到Kubernetes集群中，部署VPN服务。</p>
+</li>
+</ul>
+<pre class="overflow-visible!" data-start="1936" data-end="1984"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>kubectl apply -f vpn-deployment.yaml
+</span></span></code></div></div></pre>
+<p data-start="1986" data-end="2065" class="">在这里，<code data-start="1990" data-end="2011">vpn-deployment.yaml</code>是定义VPN服务部署的Kubernetes配置文件。它包括服务部署的细节，如容器镜像、资源要求、端口配置等。</p>
+<h3 data-start="2067" data-end="2083" class="">3. 配置Ingress</h3>
+<p data-start="2085" data-end="2162" class="">为了确保外部流量能够顺利访问VPN服务，通常需要配置Ingress。Ingress是Kubernetes中的一种资源，允许外部流量通过负载均衡器进入集群。</p>
+<h4 data-start="2164" data-end="2174" class="">配置步骤：</h4>
+<ul data-start="2176" data-end="2332">
+<li data-start="2176" data-end="2268" class="">
+<p data-start="2178" data-end="2268" class=""><strong data-start="2178" data-end="2202">安装Ingress Controller</strong>：首先，需要安装一个Ingress Controller，常见的Ingress Controller包括Nginx和Traefik。</p>
+</li>
+<li data-start="2269" data-end="2332" class="">
+<p data-start="2271" data-end="2332" class=""><strong data-start="2271" data-end="2286">创建Ingress资源</strong>：为VPN服务创建Ingress资源，配置流量路由规则，将外部请求转发到集群中的VPN服务。</p>
+</li>
+</ul>
+<pre class="overflow-visible!" data-start="2334" data-end="2637"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">yaml</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-yaml"><span><span><span class="hljs-attr">apiVersion:</span></span><span> </span><span><span class="hljs-string">networking.k8s.io/v1</span></span><span>
+</span><span><span class="hljs-attr">kind:</span></span><span> </span><span><span class="hljs-string">Ingress</span></span><span>
+</span><span><span class="hljs-attr">metadata:</span></span><span>
+  </span><span><span class="hljs-attr">name:</span></span><span> </span><span><span class="hljs-string">vpn-ingress</span></span><span>
+</span><span><span class="hljs-attr">spec:</span></span><span>
+  </span><span><span class="hljs-attr">rules:</span></span><span>
+  </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-attr">host:</span></span><span> </span><span><span class="hljs-string">vpn.example.com</span></span><span>
+    </span><span><span class="hljs-attr">http:</span></span><span>
+      </span><span><span class="hljs-attr">paths:</span></span><span>
+      </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-attr">path:</span></span><span> </span><span><span class="hljs-string">/</span></span><span>
+        </span><span><span class="hljs-attr">pathType:</span></span><span> </span><span><span class="hljs-string">Prefix</span></span><span>
+        </span><span><span class="hljs-attr">backend:</span></span><span>
+          </span><span><span class="hljs-attr">service:</span></span><span>
+            </span><span><span class="hljs-attr">name:</span></span><span> </span><span><span class="hljs-string">vpn-service</span></span><span>
+            </span><span><span class="hljs-attr">port:</span></span><span>
+              </span><span><span class="hljs-attr">number:</span></span><span> </span><span><span class="hljs-number">443</span></span><span>
+</span></span></code></div></div></pre>
+<p data-start="2639" data-end="2698" class="">以上配置文件将流量从<code data-start="2649" data-end="2666">vpn.example.com</code>转发到集群中的VPN服务，端口为443（常用于HTTPS流量）。</p>
+<h3 data-start="2700" data-end="2711" class="">4. 测试连接</h3>
+<p data-start="2713" data-end="2792" class="">成功部署和配置后，下一步是进行连接测试，确保VPN服务能够正常运行，科学上网功能可用。可以尝试从外部网络连接到VPN服务，并验证是否能够顺利访问被屏蔽的网站。</p>
+<h2 data-start="2794" data-end="2803" class="">常见问题解答</h2>
+<h3 data-start="2805" data-end="2826" class="">1. K8s科学上网有什么风险吗？</h3>
+<ul data-start="2828" data-end="2946">
+<li data-start="2828" data-end="2892" class="">
+<p data-start="2830" data-end="2892" class=""><strong data-start="2830" data-end="2840">数据泄露风险</strong>：使用不安全的VPN配置可能导致数据泄露。为了避免此类问题，建议选择知名的VPN服务商，并仔细检查配置。</p>
+</li>
+<li data-start="2893" data-end="2946" class="">
+<p data-start="2895" data-end="2946" class=""><strong data-start="2895" data-end="2903">法律风险</strong>：在一些地区，使用科学上网工具可能会违反当地的法律法规。用户应了解并遵守相关法律法规。</p>
+</li>
+</ul>
+<h3 data-start="2948" data-end="2968" class="">2. 如何选择合适的VPN服务？</h3>
+<ul data-start="2970" data-end="3048">
+<li data-start="2970" data-end="3000" class="">
+<p data-start="2972" data-end="3000" class="">选择信誉良好的VPN服务商，并查看其隐私政策和用户评价。</p>
+</li>
+<li data-start="3001" data-end="3048" class="">
+<p data-start="3003" data-end="3048" class="">确保VPN支持强加密协议，如OpenVPN、WireGuard等，以确保数据传输的安全性。</p>
+</li>
+</ul>
+<h3 data-start="3050" data-end="3068" class="">3. K8s的费用如何评估？</h3>
+<ul data-start="3070" data-end="3180">
+<li data-start="3070" data-end="3132" class="">
+<p data-start="3072" data-end="3132" class=""><strong data-start="3072" data-end="3081">云服务费用</strong>：在云平台上运行Kubernetes集群通常需要按使用量付费，费用主要取决于CPU、内存和存储的消耗。</p>
+</li>
+<li data-start="3133" data-end="3180" class="">
+<p data-start="3135" data-end="3180" class=""><strong data-start="3135" data-end="3145">自建集群费用</strong>：自建Kubernetes集群需要考虑硬件成本、维护成本和电力等因素。</p>
+</li>
+</ul>
+<h3 data-start="3182" data-end="3205" class="">4. 如何增强K8s科学上网的安全性？</h3>
+<ul data-start="3207" data-end="3284">
+<li data-start="3207" data-end="3232" class="">
+<p data-start="3209" data-end="3232" class="">强制使用加密协议，确保所有数据传输都经过加密。</p>
+</li>
+<li data-start="3233" data-end="3260" class="">
+<p data-start="3235" data-end="3260" class="">定期更新VPN服务和集群组件，修复潜在的安全漏洞。</p>
+</li>
+<li data-start="3261" data-end="3284" class="">
+<p data-start="3263" data-end="3284" class="">配置严格的访问控制策略，限制未授权的访问。</p>
+</li>
+</ul>
+<h2 data-start="3286" data-end="3291" class="">总结</h2>
+<p data-start="3293" data-end="3410" class="">使用Kubernetes实现科学上网是一种灵活、高效的解决方案。它不仅能提供高可用的网络服务，还能通过自动化管理和弹性扩展，确保科学上网服务在高流量环境下也能保持稳定运行。通过合理的配置和维护，用户可以享受到安全、快速的网络访问体验。</p>
+<p data-start="3412" data-end="3509" class="">随着Kubernetes的普及，越来越多的开发者和用户开始使用它来解决科学上网的问题。希望本文能够帮助你理解如何在Kubernetes环境中部署和管理科学上网服务，并为你提供一套完整的实现方案。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-111449.htm">Clash软件续费详细指南：轻松管理你的网络服务</a></p>
+                                        <p>下一个：<a href="/news/article-112035.htm">Shadowrocket 完整搭建与配置指南：让你的 iPhone 实现真正的自由上网</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-112739.htm" title="如何在手机上免费实现科学上网：完整实用指南">如何在手机上免费实现科学上网：完整实用指南</a></li>
+                        <li class="py-2"><a href="/news/article-106165.htm" title="深度解析：Mac软件合购与科学上网的优势与实操指南">深度解析：Mac软件合购与科学上网的优势与实操指南</a></li>
+                        <li class="py-2"><a href="/news/article-110632.htm" title="Shadowrocket SSR更新全解析：提升性能、安全性与使用体验">Shadowrocket SSR更新全解析：提升性能、安全性与使用体验</a></li>
+                        <li class="py-2"><a href="/news/article-112396.htm" title="深入剖析 Clash Mini 女皇卡组的战术与搭配技巧">深入剖析 Clash Mini 女皇卡组的战术与搭配技巧</a></li>
+                        <li class="py-2"><a href="/news/article-111449.htm" title="Clash软件续费详细指南：轻松管理你的网络服务">Clash软件续费详细指南：轻松管理你的网络服务</a></li>
+                        <li class="py-2"><a href="/news/article-109756.htm" title="如何通过Quantumult优化抖音体验：详细配置指南">如何通过Quantumult优化抖音体验：详细配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-109757.htm" title="彻底解决Quantumult X订阅错误：详尽指南与实用应对策略">彻底解决Quantumult X订阅错误：详尽指南与实用应对策略</a></li>
+                        <li class="py-2"><a href="/news/article-105973.htm" title="深入解析 Clash 安卓设置与使用指南：一站式突破网络限制">深入解析 Clash 安卓设置与使用指南：一站式突破网络限制</a></li>
+                        <li class="py-2"><a href="/news/article-112738.htm" title="深入理解“Clash”短语的表达艺术：语义冲突背后的语言魅力">深入理解“Clash”短语的表达艺术：语义冲突背后的语言魅力</a></li>
+                        <li class="py-2"><a href="/news/article-108100.htm" title="焕活秀发之源：全面解析Clash马油洗发水的神奇功效与使用秘诀">焕活秀发之源：全面解析Clash马油洗发水的神奇功效与使用秘诀</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!-- Footer 3 - Bootstrap Brain Component -->
+    <footer class="footer">
+        <div class="border-top py-4 py-md-5 py-xl-8">
+            <div class="container overflow-hidden">
+                <div class="row gy-4 gy-md-0">
+                    <div class="col-xs-12 col-md-12 order-2 order-md-1">
+                        <div class="footer-copyright-wrapper text-center">
+                                                <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                            VPN世界 订阅订阅官网 版权所有 Powered by WordPress
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/website/js/frontend/windowsclashnode/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsclashnode/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Javascript Files: Controllers -->
+    <script src="/assets/website/js/frontend/windowsclashnode/global.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
