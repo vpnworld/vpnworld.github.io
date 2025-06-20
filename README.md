@@ -1,4 +1,4 @@
-# VPN世界 - 6月18日18.1M/S|免费SSR/Shadowrocket/Clash/V2ray订阅节点连接  更新时间 2025-06-18 09:20:12
+# VPN世界 - 6月20日22.5M/S|免费V2ray/Clash/SSR/Shadowrocket订阅节点连接  更新时间 2025-06-20 10:23:55
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnworld.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnworld.github.io/uploads/2025/06/0-20250618.yaml
-- https://vpnworld.github.io/uploads/2025/06/1-20250618.yaml
-- https://vpnworld.github.io/uploads/2025/06/2-20250618.yaml
-- https://vpnworld.github.io/uploads/2025/06/3-20250618.yaml
-- https://vpnworld.github.io/uploads/2025/06/4-20250618.yaml
+- https://vpnworld.github.io/uploads/2025/06/0-20250620.yaml
+- https://vpnworld.github.io/uploads/2025/06/1-20250620.yaml
+- https://vpnworld.github.io/uploads/2025/06/2-20250620.yaml
+- https://vpnworld.github.io/uploads/2025/06/3-20250620.yaml
+- https://vpnworld.github.io/uploads/2025/06/4-20250620.yaml
 
 ### V2ray订阅链接
 
-- https://vpnworld.github.io/uploads/2025/06/0-20250618.txt
-- https://vpnworld.github.io/uploads/2025/06/1-20250618.txt
-- https://vpnworld.github.io/uploads/2025/06/2-20250618.txt
-- https://vpnworld.github.io/uploads/2025/06/3-20250618.txt
-- https://vpnworld.github.io/uploads/2025/06/4-20250618.txt
+- https://vpnworld.github.io/uploads/2025/06/0-20250620.txt
+- https://vpnworld.github.io/uploads/2025/06/1-20250620.txt
+- https://vpnworld.github.io/uploads/2025/06/2-20250620.txt
+- https://vpnworld.github.io/uploads/2025/06/3-20250620.txt
+- https://vpnworld.github.io/uploads/2025/06/4-20250620.txt
 
 ### Sing-box订阅链接
 
-- https://vpnworld.github.io/uploads/2025/06/20250618.json
+- https://vpnworld.github.io/uploads/2025/06/20250620.json
 
 ## 更多clash节点订阅 ：
 
