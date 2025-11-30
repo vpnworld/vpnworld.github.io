@@ -303,12 +303,13 @@ A: 虽然市场上有免费版本，但付费工具普遍在速度、稳定性�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2025-11-20-node-share.htm">VPN世界 - 11月20日22.8M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅节点连接</a></p>
+        <p>下一个：<a href="/free-nodes/2025-11-22-free-node-subscribe-links.htm">VPN世界 - 11月22日19.4M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅节点连接</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点排序功能如何提升访问效率？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 是否兼容 Clash 或 V2Ray 配置文件？</h5></div>
     <div class="panel-body">
-        Matsuri 会定期测速节点延迟，并结合策略组自动选择延迟低、稳定性高的节点处理不同流量。提升网页浏览、视频播放和游戏访问速度，减少掉线和卡顿。<hr />    </div>
+        Hiddify Next 支持部分 Clash 与 Xray 订阅格式，但建议使用其官方订阅格式以获得完整兼容。若订阅转换异常，可使用 Hiddify 提供的在线转换工具重新生成配置文件导入。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess AEAD 加密在安全性方面有何优势？</h5></div>
@@ -316,14 +317,14 @@ A: 虽然市场上有免费版本，但付费工具普遍在速度、稳定性�
         AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 如何实现按应用分流？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 配置文件中 inbound 和 outbound 有什么区别？</h5></div>
     <div class="panel-body">
-        Surfboard 支持通过策略组和规则文件按应用分流，将不同应用的流量分配到不同节点。这样可保证游戏或视频走低延迟节点，提高访问速度并优化网络体验。<hr />    </div>
+        在 V2Ray 中，inbound 表示流量进入方式（如本地代理端口），outbound 表示流量出口方式（如 VMess、Trojan 等协议）。通过灵活组合两者，可以实现局域网共享、分流及中继等功能。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 多路复用如何优化短连接性能？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 节点排序功能如何提升访问效率？</h5></div>
     <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适用于游戏、即时通讯等高频短连接场景，提高吞吐量和连接稳定性，优化整体网络体验。<hr />    </div>
+        Matsuri 会定期测速节点延迟，并结合策略组自动选择延迟低、稳定性高的节点处理不同流量。提升网页浏览、视频播放和游戏访问速度，减少掉线和卡顿。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议和混淆选择如何影响稳定性？</h5></div>
@@ -331,9 +332,14 @@ A: 虽然市场上有免费版本，但付费工具普遍在速度、稳定性�
         根据网络封锁情况选择合适协议和混淆方式，如 tls1.2_ticket_auth 模拟 HTTPS 流量。合理组合可提升抗封锁能力和连接稳定性，确保节点长期可用，优化网络访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 配置文件中 inbound 和 outbound 有什么区别？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 多路复用如何优化短连接性能？</h5></div>
     <div class="panel-body">
-        在 V2Ray 中，inbound 表示流量进入方式（如本地代理端口），outbound 表示流量出口方式（如 VMess、Trojan 等协议）。通过灵活组合两者，可以实现局域网共享、分流及中继等功能。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适用于游戏、即时通讯等高频短连接场景，提高吞吐量和连接稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 如何实现按应用分流？</h5></div>
+    <div class="panel-body">
+        Surfboard 支持通过策略组和规则文件按应用分流，将不同应用的流量分配到不同节点。这样可保证游戏或视频走低延迟节点，提高访问速度并优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 的伪装域名如何正确配置？</h5></div>
@@ -341,19 +347,14 @@ A: 虽然市场上有免费版本，但付费工具普遍在速度、稳定性�
         伪装域名必须真实可访问且证书有效，否则客户端无法建立连接。正确配置可隐藏真实流量特征，降低被封锁和检测风险，提高节点安全性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的协议参数如何提高抗封锁能力？</h5></div>
-    <div class="panel-body">
-        SSR 的协议参数可以模拟不同流量特征，使加密流量更像普通 HTTP 或 HTTPS。合理选择协议类型和混淆参数，可以有效降低被封锁的风险，提高节点长期可用性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 是否兼容 Clash 或 V2Ray 配置文件？</h5></div>
-    <div class="panel-body">
-        Hiddify Next 支持部分 Clash 与 Xray 订阅格式，但建议使用其官方订阅格式以获得完整兼容。若订阅转换异常，可使用 Hiddify 提供的在线转换工具重新生成配置文件导入。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
     <div class="panel-body">
-        伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。    </div>
+        伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的协议参数如何提高抗封锁能力？</h5></div>
+    <div class="panel-body">
+        SSR 的协议参数可以模拟不同流量特征，使加密流量更像普通 HTTP 或 HTTPS。合理选择协议类型和混淆参数，可以有效降低被封锁的风险，提高节点长期可用性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -382,16 +383,16 @@ A: 虽然市场上有免费版本，但付费工具普遍在速度、稳定性�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-19-top-vpn.htm" title="VPN世界 - 11月19日21.9M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 11月19日21.9M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-21-top-vpn-node.htm" title="VPN世界 - 11月21日22.3M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点连接">VPN世界 - 11月21日22.3M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-17-top-vpn-node.htm" title="VPN世界 - 11月17日21.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅节点连接">VPN世界 - 11月17日21.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-4-vpn-proxy.htm" title="VPN世界 - 10月4日22.8M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点连接">VPN世界 - 10月4日22.8M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-13-node-share-links.htm" title="VPN世界 - 11月13日21.7M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点连接">VPN世界 - 11月13日21.7M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-5-top-vpn-node.htm" title="VPN世界 - 10月5日19.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点连接">VPN世界 - 10月5日19.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-free-node-subscribe.htm" title="VPN世界 - 10月12日22.2M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点连接">VPN世界 - 10月12日22.2M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-10-share-vpn.htm" title="VPN世界 - 11月10日18.7M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 11月10日18.7M/S|免费SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-19-vpn-free.htm" title="VPN世界 - 10月19日20.2M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 10月19日20.2M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点连接</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-9-vpn-proxy.htm" title="VPN世界 - 10月9日18.8M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点连接">VPN世界 - 10月9日18.8M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-11-vpn-node.htm" title="VPN世界 - 10月11日19.5M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 10月11日19.5M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-25-top-vpn.htm" title="VPN世界 - 10月25日20M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 10月25日20M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-31-vpn-github.htm" title="VPN世界 - 10月31日20.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点订阅节点连接">VPN世界 - 10月31日20.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-6-free-vpn-node.htm" title="VPN世界 - 11月6日18.2M/S|免费SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 11月6日18.2M/S|免费SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-29-top-vpn-node.htm" title="VPN世界 - 11月29日19.1M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点连接">VPN世界 - 11月29日19.1M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-2-free-vpn-node.htm" title="VPN世界 - 11月2日18.6M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点连接">VPN世界 - 11月2日18.6M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-23-vpn-proxy.htm" title="VPN世界 - 11月23日20.4M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅节点连接">VPN世界 - 11月23日20.4M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-30-share-vpn.htm" title="VPN世界 - 11月30日18.3M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 11月30日18.3M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-7-vpn-free.htm" title="VPN世界 - 10月7日20.9M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点连接">VPN世界 - 10月7日20.9M/S|免费Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点连接</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-18-free-vpn.htm" title="VPN世界 - 10月18日19.8M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点连接">VPN世界 - 10月18日19.8M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点连接</a></li>
                     </ul>
     </div>
 </div>
@@ -403,7 +404,7 @@ A: 虽然市场上有免费版本，但付费工具普遍在速度、稳定性�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
