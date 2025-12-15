@@ -1,4 +1,4 @@
-# VPN世界 - 12月7日22.5M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点订阅节点连接  更新时间 2025-12-07 10:06:58
+# VPN世界 - 12月15日21.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点连接  更新时间 2025-12-15 08:51:14
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnworld.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnworld.github.io/uploads/2025/12/0-20251207.yaml
-- https://vpnworld.github.io/uploads/2025/12/1-20251207.yaml
-- https://vpnworld.github.io/uploads/2025/12/2-20251207.yaml
-- https://vpnworld.github.io/uploads/2025/12/3-20251207.yaml
-- https://vpnworld.github.io/uploads/2025/12/4-20251207.yaml
+- https://vpnworld.github.io/uploads/2025/12/0-20251215.yaml
+- https://vpnworld.github.io/uploads/2025/12/1-20251215.yaml
+- https://vpnworld.github.io/uploads/2025/12/2-20251215.yaml
+- https://vpnworld.github.io/uploads/2025/12/3-20251215.yaml
+- https://vpnworld.github.io/uploads/2025/12/4-20251215.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnworld.github.io/uploads/2025/12/0-20251207.txt
-- https://vpnworld.github.io/uploads/2025/12/1-20251207.txt
-- https://vpnworld.github.io/uploads/2025/12/2-20251207.txt
-- https://vpnworld.github.io/uploads/2025/12/3-20251207.txt
-- https://vpnworld.github.io/uploads/2025/12/4-20251207.txt
+- https://vpnworld.github.io/uploads/2025/12/0-20251215.txt
+- https://vpnworld.github.io/uploads/2025/12/1-20251215.txt
+- https://vpnworld.github.io/uploads/2025/12/2-20251215.txt
+- https://vpnworld.github.io/uploads/2025/12/3-20251215.txt
+- https://vpnworld.github.io/uploads/2025/12/4-20251215.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnworld.github.io/uploads/2025/12/20251207.json
+- https://vpnworld.github.io/uploads/2025/12/20251215.json
 
 ## 更多Clash节点订阅 ：
 
