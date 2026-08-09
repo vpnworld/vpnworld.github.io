@@ -385,29 +385,14 @@ A：目前没有官方的 PC 版。建议使用 Clash、V2RayN 等专业 PC 工�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 能否同步 iCloud 配置？</h5></div>
-    <div class="panel-body">
-        可以。Surfboard 支持 iCloud 同步功能，用户可在不同苹果设备上共享同一配置文件。这样即使更换手机或重装系统，也能自动恢复节点与分流设置。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 如何结合策略组实现智能分流？</h5></div>
     <div class="panel-body">
         Surfboard 可根据策略组和规则文件自动选择最优节点处理流量。不同应用或网站可分配不同节点，保证低延迟和高速访问，同时减少手动切换节点的操作。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 策略组如何优化视频访问？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 是什么？</h5></div>
     <div class="panel-body">
-        通过策略组将视频流量分配到低延迟、高带宽节点，Surfboard 可自动切换到最佳节点。减少缓冲和卡顿，提高在线视频播放流畅性和整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 是什么？它主要有什么用途？</h5></div>
-    <div class="panel-body">
-        Clash 是一个跨平台的代理客户端，支持多种代理协议，如 Vmess、Vless、Trojan 和 Shadowsocks 等。它主要用于分流管理、网络代理和科学上网，用户可以通过配置文件灵活控制网络流量，实现不同网站或应用走不同代理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 的配置文件可以手动编辑吗？</h5></div>
-    <div class="panel-body">
-        Surfboard 的配置文件是基于 YAML 格式的文本文件，可以手动编辑。通过修改策略、节点组或规则部分，用户可自由定制代理逻辑，也可通过导入订阅实现自动更新。<hr />    </div>
+        Mihomo 是 Clash Premium 的开源替代项目，兼容原版 Clash 配置文件并扩展了部分新功能。它性能优异、内存占用低，适用于希望自定义构建代理环境的高级用户。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 支持 Reality 吗？</h5></div>
@@ -415,9 +400,19 @@ A：目前没有官方的 PC 版。建议使用 Clash、V2RayN 等专业 PC 工�
         支持。Hiddify Next 基于 sing-box 内核，可加载 Vless+Reality、Trojan+TLS 等高级协议配置。用户可直接导入机场订阅，无需手动修改复杂参数。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 能否同步 iCloud 配置？</h5></div>
+    <div class="panel-body">
+        可以。Surfboard 支持 iCloud 同步功能，用户可在不同苹果设备上共享同一配置文件。这样即使更换手机或重装系统，也能自动恢复节点与分流设置。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 outbound freedom 模式有什么作用？</h5></div>
     <div class="panel-body">
         freedom 是直连模块，可用于分流策略中实现部分流量直连。用户可在 routing 中设置匹配规则，将国内域名或局域网 IP 指向 freedom 出口，从而减少代理开销和延迟。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 策略组如何优化视频访问？</h5></div>
+    <div class="panel-body">
+        通过策略组将视频流量分配到低延迟、高带宽节点，Surfboard 可自动切换到最佳节点。减少缓冲和卡顿，提高在线视频播放流畅性和整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
@@ -425,14 +420,19 @@ A：目前没有官方的 PC 版。建议使用 Clash、V2RayN 等专业 PC 工�
         通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 是什么？它主要有什么用途？</h5></div>
+    <div class="panel-body">
+        Clash 是一个跨平台的代理客户端，支持多种代理协议，如 Vmess、Vless、Trojan 和 Shadowsocks 等。它主要用于分流管理、网络代理和科学上网，用户可以通过配置文件灵活控制网络流量，实现不同网站或应用走不同代理。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
     <div class="panel-body">
         用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 是什么？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 的配置文件可以手动编辑吗？</h5></div>
     <div class="panel-body">
-        Mihomo 是 Clash Premium 的开源替代项目，兼容原版 Clash 配置文件并扩展了部分新功能。它性能优异、内存占用低，适用于希望自定义构建代理环境的高级用户。    </div>
+        Surfboard 的配置文件是基于 YAML 格式的文本文件，可以手动编辑。通过修改策略、节点组或规则部分，用户可自由定制代理逻辑，也可通过导入订阅实现自动更新。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -480,16 +480,16 @@ A：目前没有官方的 PC 版。建议使用 Clash、V2RayN 等专业 PC 工�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-7-29.htm" title="VPN世界 - 7月29日18.1M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点订阅节点连接">VPN世界 - 7月29日18.1M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-26-vpn-node.htm" title="VPN世界 - 7月26日18.1M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅节点连接">VPN世界 - 7月26日18.1M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-4-vpn-free.htm" title="VPN世界 - 7月4日19.2M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点订阅节点连接">VPN世界 - 7月4日19.2M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-22-free-node-subscribe.htm" title="VPN世界 - 6月22日18.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点连接">VPN世界 - 6月22日18.2M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-6-vpn-node.htm" title="VPN世界 - 7月6日20.4M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 7月6日20.4M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-18-vpn-free.htm" title="VPN世界 - 6月18日22.2M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 6月18日22.2M/S|免费SSR节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-26-top-vpn-node.htm" title="VPN世界 - 6月26日22.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅节点连接">VPN世界 - 6月26日22.6M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-28-vpn-proxy.htm" title="VPN世界 - 7月28日21.6M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅节点连接">VPN世界 - 7月28日21.6M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/Clash节点/SSR节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-2-vpn-node.htm" title="VPN世界 - 7月2日18.5M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点连接">VPN世界 - 7月2日18.5M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-11-share-vpn.htm" title="VPN世界 - 7月11日18.9M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点订阅节点连接">VPN世界 - 7月11日18.9M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-10-vpn-node.htm" title="VPN世界 - 6月10日21.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点/Trojan节点订阅节点连接">VPN世界 - 6月10日21.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点/Trojan节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-4-top-vpn-node.htm" title="VPN世界 - 8月4日23M/S|免费Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点连接">VPN世界 - 8月4日23M/S|免费Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-29-share-vpn.htm" title="VPN世界 - 6月29日21M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点连接">VPN世界 - 6月29日21M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-1-free-vpn.htm" title="VPN世界 - 7月1日22.1M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点连接">VPN世界 - 7月1日22.1M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-5-free-vpn.htm" title="VPN世界 - 7月5日20.5M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点连接">VPN世界 - 7月5日20.5M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-28-vpn-proxy.htm" title="VPN世界 - 6月28日19.5M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点连接">VPN世界 - 6月28日19.5M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-21-vpn-github.htm" title="VPN世界 - 7月21日20M/S|免费SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点连接">VPN世界 - 7月21日20M/S|免费SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点连接</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-6-14-vpn-free.htm" title="VPN世界 - 6月14日20.7M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点/Trojan节点订阅节点连接">VPN世界 - 6月14日20.7M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点/Trojan节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-17-free-node-subscribe-links.htm" title="VPN世界 - 6月17日22.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点连接">VPN世界 - 6月17日22.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点连接</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -501,7 +501,7 @@ A：目前没有官方的 PC 版。建议使用 Clash、V2RayN 等专业 PC 工�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
