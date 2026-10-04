@@ -323,14 +323,9 @@ A5: 完全可以，通过订阅链接在多平台导入，实现配置同步。<
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 多路复用对即时通讯的优势是什么？</h5></div>
+    <div class="panel-heading"><h5>Clash 的 Profile URL 是否可以同时添加多个？</h5></div>
     <div class="panel-body">
-        多路复用可让多个短连接共享同一通道，减少握手次数和加密开销，提高吞吐量和连接稳定性。适合即时通讯应用，保证消息快速传输和稳定接收。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 如何结合规则屏蔽广告？</h5></div>
-    <div class="panel-body">
-        Surfboard 可通过规则文件匹配广告域名或 URL，并将其重定向或阻断。结合策略组自动更新规则，可实现广告屏蔽，提高浏览体验和节省带宽。<hr />    </div>
+        可以。Clash 支持导入多个 Profile URL，用户可在“配置”面板切换不同订阅源。多个配置之间互不干扰，方便区分不同地区或用途的线路。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 在移动网络下的优势有哪些？</h5></div>
@@ -338,24 +333,24 @@ A5: 完全可以，通过订阅链接在多平台导入，实现配置同步。<
         XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多节点切换，可提升网页浏览、视频播放和游戏的连接稳定性和流畅度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的脚本功能能实现哪些高级操作？</h5></div>
-    <div class="panel-body">
-        QuantumultX 支持 JavaScript 脚本，可用于请求重写、数据修改、自动签到、广告拦截等功能。用户可通过脚本中心导入开源脚本，极大增强应用的灵活性与自动化能力。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的 Profile URL 是否可以同时添加多个？</h5></div>
-    <div class="panel-body">
-        可以。Clash 支持导入多个 Profile URL，用户可在“配置”面板切换不同订阅源。多个配置之间互不干扰，方便区分不同地区或用途的线路。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 是否支持延迟排序节点？</h5></div>
-    <div class="panel-body">
-        支持。Matsuri 会自动测试节点延迟并按结果排序。用户可快速选择延迟最低或速度最快的节点，提高网络访问速度，尤其适合游戏或视频场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 能否同时管理多个客户端节点？</h5></div>
     <div class="panel-body">
         支持。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。用户可通过策略组灵活管理节点，实现多客户端分流和网络优化，提高使用便利性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 如何结合规则屏蔽广告？</h5></div>
+    <div class="panel-body">
+        Surfboard 可通过规则文件匹配广告域名或 URL，并将其重定向或阻断。结合策略组自动更新规则，可实现广告屏蔽，提高浏览体验和节省带宽。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 多路复用对即时通讯的优势是什么？</h5></div>
+    <div class="panel-body">
+        多路复用可让多个短连接共享同一通道，减少握手次数和加密开销，提高吞吐量和连接稳定性。适合即时通讯应用，保证消息快速传输和稳定接收。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下的优势是什么？</h5></div>
+    <div class="panel-body">
+        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多出口节点使用，可提高访问速度和连接稳定性，保证用户体验流畅可靠。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化视频访问？</h5></div>
@@ -363,14 +358,19 @@ A5: 完全可以，通过订阅链接在多平台导入，实现配置同步。<
         WinXray 定期测速节点延迟和丢包率，并结合策略组自动选择最佳节点。保证视频流量通过低延迟节点，减少缓冲和卡顿，提高播放流畅度和网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 是否支持延迟排序节点？</h5></div>
+    <div class="panel-body">
+        支持。Matsuri 会自动测试节点延迟并按结果排序。用户可快速选择延迟最低或速度最快的节点，提高网络访问速度，尤其适合游戏或视频场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>如何在 Nginx 上为 Vmess/WS 配置反向代理与 TLS？</h5></div>
     <div class="panel-body">
         在 Nginx 中配置 HTTPS 站点并将特定路径（如 /ray）反向代理到 V2Ray 的 WebSocket 端口，确保 proxy_set_header 设置正确（Host、X-Real-IP 等）。同时使用 certbot 获取并自动续期 TLS 证书以维护安全。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下的优势是什么？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 的脚本功能能实现哪些高级操作？</h5></div>
     <div class="panel-body">
-        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定的移动网络。结合策略组和多出口节点使用，可提高访问速度和连接稳定性，保证用户体验流畅可靠。    </div>
+        QuantumultX 支持 JavaScript 脚本，可用于请求重写、数据修改、自动签到、广告拦截等功能。用户可通过脚本中心导入开源脚本，极大增强应用的灵活性与自动化能力。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -418,16 +418,16 @@ A5: 完全可以，通过订阅链接在多平台导入，实现配置同步。<
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-free-vpn-node.htm" title="VPN世界 - 8月8日21.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点订阅节点连接">VPN世界 - 8月8日21.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-6-node-share.htm" title="VPN世界 - 9月6日19M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点连接">VPN世界 - 9月6日19M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-9.htm" title="VPN世界 - 9月9日22.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点订阅节点连接">VPN世界 - 9月9日22.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-node-subscribe.htm" title="VPN世界 - 10月2日18.5M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点连接">VPN世界 - 10月2日18.5M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-9-17.htm" title="VPN世界 - 9月17日22.9M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点订阅节点连接">VPN世界 - 9月17日22.9M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-11.htm" title="VPN世界 - 9月11日21M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点连接">VPN世界 - 9月11日21M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点连接</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-12-top-vpn-node.htm" title="VPN世界 - 9月12日21.7M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 9月12日21.7M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-14-vpn-node.htm" title="VPN世界 - 9月14日22M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点连接">VPN世界 - 9月14日22M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-9-3.htm" title="VPN世界 - 9月3日21.4M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 9月3日21.4M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-29.htm" title="VPN世界 - 8月29日22.9M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点连接">VPN世界 - 8月29日22.9M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-9-7.htm" title="VPN世界 - 9月7日21.8M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点连接">VPN世界 - 9月7日21.8M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-18-node-share.htm" title="VPN世界 - 8月18日22.4M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点连接">VPN世界 - 8月18日22.4M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点连接</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-20-vpn-node.htm" title="VPN世界 - 9月20日20.2M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点/Clash节点订阅节点连接">VPN世界 - 9月20日20.2M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/SSR节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-9-3.htm" title="VPN世界 - 9月3日21.4M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 9月3日21.4M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-4-vpn-free.htm" title="VPN世界 - 9月4日19.3M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点连接">VPN世界 - 9月4日19.3M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-node-share.htm" title="VPN世界 - 9月6日19M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点连接">VPN世界 - 9月6日19M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-19.htm" title="VPN世界 - 9月19日20.5M/S|免费Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点连接">VPN世界 - 9月19日20.5M/S|免费Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-13.htm" title="VPN世界 - 9月13日20.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点连接">VPN世界 - 9月13日20.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点连接</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -439,10 +439,10 @@ A5: 完全可以，通过订阅链接在多平台导入，实现配置同步。<
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                     </ul>
     </div>
