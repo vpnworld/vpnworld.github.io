@@ -276,24 +276,9 @@ A：目前 Acrh17 官方未发布 Android/iOS 客户端，手机用户可参考�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的多策略组有什么作用？</h5></div>
+    <div class="panel-heading"><h5>WinXray 节点健康检测如何提升网络体验？</h5></div>
     <div class="panel-body">
-        多策略组可以将节点按用途、延迟或地域分类，结合路由规则实现自动分流。不同类型流量可走不同节点，提升访问速度和稳定性，特别适合多应用使用场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
-    <div class="panel-body">
-        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 用户流量配额如何设置？</h5></div>
-    <div class="panel-body">
-        管理员可为每个用户设置带宽和流量上限，超出限制时可降速或阻止访问。确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和使用效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 是否支持 VMess + TLS + WS 模式？</h5></div>
-    <div class="panel-body">
-        是的，WinXray 支持该组合。用户需填写正确的 host、path、端口及证书验证方式。若节点来自订阅源，将自动识别相应参数；否则需手动输入与服务端一致的配置项。<hr />    </div>
+        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动切换到最优节点。避免高延迟或失效节点，提高网页浏览、视频播放和游戏连接的稳定性和速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议和混淆选择如何影响稳定性？</h5></div>
@@ -301,19 +286,29 @@ A：目前 Acrh17 官方未发布 Android/iOS 客户端，手机用户可参考�
         根据网络封锁情况选择合适协议和混淆方式，如 tls1.2_ticket_auth 模拟 HTTPS 流量。合理组合可提升抗封锁能力和连接稳定性，确保节点长期可用，优化网络访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 节点健康检测如何提升网络体验？</h5></div>
-    <div class="panel-body">
-        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动切换到最优节点。避免高延迟或失效节点，提高网页浏览、视频播放和游戏连接的稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 是否支持自定义 DNS？</h5></div>
-    <div class="panel-body">
-        支持。Mellow 的配置文件中可设置 DNS 服务器地址及模式（如 DoH、DoT）。用户可使用安全 DNS，如 Cloudflare 1.1.1.1 或 Google DNS，以减少污染风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 的节点自动测速功能如何配置？</h5></div>
     <div class="panel-body">
         Matsuri 可以设置测速周期和节点列表，程序会自动测试延迟和速度并排序。用户可根据测试结果选择最佳节点，提高网络访问速度和使用体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 节点分类管理有什么作用？</h5></div>
+    <div class="panel-body">
+        节点分类可按地区、延迟或用途分组，结合策略组实现自动分流。方便管理大量节点，快速选择最优节点，提高访问速度和连接稳定性，优化网络管理效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的多策略组有什么作用？</h5></div>
+    <div class="panel-body">
+        多策略组可以将节点按用途、延迟或地域分类，结合路由规则实现自动分流。不同类型流量可走不同节点，提升访问速度和稳定性，特别适合多应用使用场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 是否支持 VMess + TLS + WS 模式？</h5></div>
+    <div class="panel-body">
+        是的，WinXray 支持该组合。用户需填写正确的 host、path、端口及证书验证方式。若节点来自订阅源，将自动识别相应参数；否则需手动输入与服务端一致的配置项。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
+    <div class="panel-body">
+        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS 在高封锁环境下的优势是什么？</h5></div>
@@ -321,9 +316,14 @@ A：目前 Acrh17 官方未发布 Android/iOS 客户端，手机用户可参考�
         VLESS 去掉了内置加密，依赖 TLS 层安全，减少被 DPI 检测的特征。结合 XTLS 或 Reality 模式，可以更好地隐藏流量，提高在高封锁网络中的稳定性与隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分类管理有什么作用？</h5></div>
+    <div class="panel-heading"><h5>Mellow 是否支持自定义 DNS？</h5></div>
     <div class="panel-body">
-        节点分类可按地区、延迟或用途分组，结合策略组实现自动分流。方便管理大量节点，快速选择最优节点，提高访问速度和连接稳定性，优化网络管理效率。    </div>
+        支持。Mellow 的配置文件中可设置 DNS 服务器地址及模式（如 DoH、DoT）。用户可使用安全 DNS，如 Cloudflare 1.1.1.1 或 Google DNS，以减少污染风险。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 用户流量配额如何设置？</h5></div>
+    <div class="panel-body">
+        管理员可为每个用户设置带宽和流量上限，超出限制时可降速或阻止访问。确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和使用效率。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -371,16 +371,16 @@ A：目前 Acrh17 官方未发布 Android/iOS 客户端，手机用户可参考�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-node-share.htm" title="VPN世界 - 9月6日19M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点连接">VPN世界 - 9月6日19M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-11-1.htm" title="VPN世界 - 11月1日19.3M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点订阅节点连接">VPN世界 - 11月1日19.3M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点订阅节点连接</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-27.htm" title="VPN世界 - 9月27日19M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点订阅节点连接">VPN世界 - 9月27日19M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-18-vpn-node.htm" title="VPN世界 - 10月18日21.6M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅节点连接">VPN世界 - 10月18日21.6M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-10-1.htm" title="VPN世界 - 10月1日19.8M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 10月1日19.8M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-10-23.htm" title="VPN世界 - 10月23日22.5M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅节点连接">VPN世界 - 10月23日22.5M/S|免费SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-4-free-node-subscribe.htm" title="VPN世界 - 10月4日20.7M/S|免费SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/Trojan节点订阅节点连接">VPN世界 - 10月4日20.7M/S|免费SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/Trojan节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-10-15.htm" title="VPN世界 - 10月15日21.2M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点连接">VPN世界 - 10月15日21.2M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-10-19.htm" title="VPN世界 - 10月19日19.2M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点连接">VPN世界 - 10月19日19.2M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-8-node-share.htm" title="VPN世界 - 10月8日20.1M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅节点连接">VPN世界 - 10月8日20.1M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-11.htm" title="VPN世界 - 9月11日21M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点连接">VPN世界 - 9月11日21M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-top-vpn-node.htm" title="VPN世界 - 9月12日21.7M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 9月12日21.7M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-10-node-share.htm" title="VPN世界 - 9月10日20.5M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接">VPN世界 - 9月10日20.5M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点连接</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-22-node-share.htm" title="VPN世界 - 10月22日19.1M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点订阅节点连接">VPN世界 - 10月22日19.1M/S|免费Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-28-node-share.htm" title="VPN世界 - 9月28日20.4M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点连接">VPN世界 - 9月28日20.4M/S|免费Singbox节点/SSR节点/Trojan节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-23.htm" title="VPN世界 - 9月23日19.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点连接">VPN世界 - 9月23日19.9M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-9.htm" title="VPN世界 - 9月9日22.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点订阅节点连接">VPN世界 - 9月9日22.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点订阅节点连接</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-10-1.htm" title="VPN世界 - 10月1日19.8M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点/Singbox节点订阅节点连接">VPN世界 - 10月1日19.8M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点/Singbox节点订阅节点连接</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -392,7 +392,10 @@ A：目前 Acrh17 官方未发布 Android/iOS 客户端，手机用户可参考�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">25</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
